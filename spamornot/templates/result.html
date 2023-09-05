@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include your custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styler.css') }}">
+    <style>
+        /* Center the button */
+        .center-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        /* Center the text within the result box */
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text text-center"> <!-- Center the text -->
+            RESULT
+        </div>
+        <div class="form-row">
+            <div class="input-data text-center"> <!-- Center the text within the input-data div -->
+                <strong>{{ result }}</strong>
+            </div>
+        </div>
+        <form method="POST" action="/">
+            <div class="form-row submit-btn">
+                <div class="input-data center-btn">
+                    <a class="btn btn-primary again" href="/">Again</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
