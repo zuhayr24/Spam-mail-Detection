@@ -20,21 +20,3 @@ A machine learning model that classifies emails as **spam** or **ham** using Log
 * Pandas
 * Scikit-Learn
 
-## 🔥 How to Run
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/spam-email-classifier.git
-   ```
-2. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the main script:
-
-   ```bash
-   python main.py
-   ```
-4. Test the prediction system by modifying the `input_mail` variable in the script.
